@@ -1,5 +1,6 @@
 server:
     port: 8080
+    contextPath: /publisher
 
 multipart:
     maxFileSize: 10MB
@@ -91,7 +92,7 @@ cas:
 
 app:
     service:
-        security: https://lycees.netocentre.fr/j_spring_cas_security_check
+        security: https://lycees.netocentre.fr/publisher/j_spring_cas_security_check
     admin:
         userName: F08001ut
 

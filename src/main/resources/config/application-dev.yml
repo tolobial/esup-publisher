@@ -2,6 +2,7 @@ server:
     #address: localhost
     #address: 192.168.45.145
     port: 8080
+    contextPath: /publisher
 
 multipart:
     maxFileSize: 10MB
@@ -93,7 +94,7 @@ cas:
 
 app:
     service:
-        security: http://localhost:8080/j_spring_cas_security_check
+        security: http://localhost:8080/publisher/j_spring_cas_security_check
         #security: http://192.168.45.145:8080/j_spring_cas_security_check
     admin:
         userName: F08001ut
