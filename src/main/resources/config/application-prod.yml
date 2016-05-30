@@ -1,5 +1,5 @@
 server:
-    port: 8080
+    port: 8443
     contextPath: /publisher
 
 multipart:
@@ -9,15 +9,15 @@ multipart:
 spring:
     profiles:
         active: prod
-		 include: ldapgrp
+        include: ldapgrp
 
     datasource:
         dataSourceClassName: com.mysql.jdbc.jdbc2.optional.MysqlDataSource
-        url: jdbc:mysql://chouette.giprecia.net:3306/publisher?autoreconnect=true
+        url: jdbc:mysql://baobab.giprecia.net:3306/publisher?autoreconnect=true
         databaseName:
         serverName:
-        username: jgribonvald
-        password: root
+        username: publisher
+        password: M2PplpuNEWS
         cachePrepStmts: true
         prepStmtCacheSize: 250
         prepStmtCacheSqlLimit: 2048
@@ -45,6 +45,9 @@ spring:
         mode: XHTML
         cache: true
 
+logging:
+    config: "classpath:logback.xml"
+
 metrics:
     jmx.enabled: true
     spark:
@@ -64,7 +67,7 @@ cache:
 
 ldap:
     base: dc=esco-centre,dc=fr
-    urls: ldap://breme:389/
+    urls: ldap://chene.giprecia.net:389/
     userDn: cn=admin,ou=administrateurs,dc=esco-centre,dc=fr
     password: LplmENT
     timeLimit: 20000
@@ -86,18 +89,19 @@ ldap:
 
 cas:
     url:
-        prefix: https://ent.netocentre.fr/cas/
-        login: https://ent.netocentre.fr/cas/login
-        logout: https://ent.netocentre.fr/cas/logout
+        prefix: https://test.reciacas.fr/cas/
+        login: https://test.reciacas.fr/cas/login
+        logout: https://test.reciacas.fr/cas/logout
 
 app:
     service:
-        security: https://lycees.netocentre.fr/publisher/j_spring_cas_security_check
+        security: https://test-lycee.reciaent.fr/publisher/j_spring_cas_security_check
     admin:
-        userName: F08001ut
+        userName: admin
+        groupName: "esco:admin:central"
 
     cors:
         allowed:
             origins: "*"
     upload:
-            path: "/opt/uploads/"
+            path: "/home/esco/uploads/"

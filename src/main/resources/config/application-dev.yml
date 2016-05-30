@@ -47,6 +47,9 @@ spring:
         mode: XHTML
         cache: false
 
+logging:
+    config: "classpath:logback-dev.xml"
+
 metrics:
     jmx.enabled: true
     spark:
