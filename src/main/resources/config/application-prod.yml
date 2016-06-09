@@ -96,6 +96,9 @@ cas:
 app:
     service:
         security: https://test-lycee.reciaent.fr/publisher/j_spring_cas_security_check
+        domainName: test-lycee.reciaent.fr
+        protocol: https://
+
     admin:
         userName: admin
         groupName: "esco:admin:central"
@@ -103,5 +106,6 @@ app:
     cors:
         allowed:
             origins: "*"
+
     upload:
             path: "/home/esco/uploads/"
