@@ -109,3 +109,6 @@ app:
 
     upload:
             path: "/home/esco/uploads/"
+
+    authorizedServices:
+            ipRange: "192.168.1.0/24"

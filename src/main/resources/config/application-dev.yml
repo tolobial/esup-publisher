@@ -112,6 +112,9 @@ app:
     upload:
         path: "/home/jgribonvald/tmp/"
 
+    authorizedServices:
+        ipRange: "192.168.57.0/24"
+
 ws:
     esup:
         url: https://test.cas.ent/portail/services/UportalService
