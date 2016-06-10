@@ -108,7 +108,7 @@ app:
             origins: "*"
 
     upload:
-            path: "/home/esco/uploads/"
+        path: "/home/esco/uploads/"
 
     authorizedServices:
-            ipRange: "192.168.1.0/24"
+        ipRange: "192.168.0.0/16"

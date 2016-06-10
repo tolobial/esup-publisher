@@ -100,7 +100,7 @@ app:
         security: http://localhost:8080/publisher/j_spring_cas_security_check
         #security: http://192.168.45.145:8080/j_spring_cas_security_check
         domainName: localhost:8080
-        protocol: http
+        protocol: http://
 
     admin:
         userName: F08001ut
