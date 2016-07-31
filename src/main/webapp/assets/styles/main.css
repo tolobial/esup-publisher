@@ -4,23 +4,36 @@ body {
     color: #333;
 }
 
-pre { margin-bottom:15px; }
+pre {
+    margin-bottom: 15px;
+}
+
 
 /* for relog button */
+
 body > .modal.fade.in {
     background-color: grey;
 }
 
+
 /* ==========================================================================
 Hide ng-cloak on page load, https://docs.angularjs.org/api/ng/directive/ngCloak
 ========================================================================== */
-[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+
+[ng\:cloak],
+[ng-cloak],
+[data-ng-cloak],
+[x-ng-cloak],
+.ng-cloak,
+.x-ng-cloak {
     display: none !important;
 }
+
 
 /* ==========================================================================
 Developement Ribbon
 ========================================================================== */
+
 .development {
     /*position: absolute;
     width: 149px;
@@ -38,17 +51,21 @@ Developement Ribbon
     text-align: center;
 }
 
+
 /* ==========================================================================
 Version number in navbar
 ========================================================================== */
+
 .navbar-version {
     font-size: 10px;
     color: #ccc
 }
 
+
 /* ==========================================================================
 Browser Upgrade Prompt
 ========================================================================== */
+
 .browserupgrade {
     margin: 0.2em 0;
     background: #ccc;
@@ -86,14 +103,15 @@ Browser Upgrade Prompt
     background-size: contain;
 }
 
+
 /* wait autoprefixer update to allow simple generation of high pixel density media query */
-@media
-only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (   min--moz-device-pixel-ratio: 2),
-only screen and (     -o-min-device-pixel-ratio: 2/1),
-only screen and (        min-device-pixel-ratio: 2),
-only screen and (                min-resolution: 192dpi),
-only screen and (                min-resolution: 2dppx) {
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and ( min--moz-device-pixel-ratio: 2),
+only screen and ( -o-min-device-pixel-ratio: 2/1),
+only screen and ( min-device-pixel-ratio: 2),
+only screen and ( min-resolution: 192dpi),
+only screen and ( min-resolution: 2dppx) {
     .hipster {
         background: url("../images/hipster2x.png") no-repeat center top;
         background-size: contain;
@@ -104,7 +122,8 @@ only screen and (                min-resolution: 2dppx) {
     cursor: pointer;
 }
 
-#threadDump .popover, #healthCheck .popover {
+#threadDump .popover,
+#healthCheck .popover {
     top: inherit;
     display: block;
     font-size: 10px;
@@ -118,42 +137,77 @@ only screen and (                min-resolution: 2dppx) {
 .health-details {
     min-width: 400px;
 }
+
 .alert .popover pre {
     font-size: 10px;
 }
 
-.voffset  { margin-top: 2px; }
-.voffset1 { margin-top: 5px; }
-.voffset2 { margin-top: 10px; }
-.voffset3 { margin-top: 15px; }
-.voffset4 { margin-top: 30px; }
-.voffset5 { margin-top: 40px; }
-.voffset6 { margin-top: 60px; }
-.voffset7 { margin-top: 80px; }
-.voffset8 { margin-top: 100px; }
-.voffset9 { margin-top: 150px; }
+.voffset {
+    margin-top: 2px;
+}
+
+.voffset1 {
+    margin-top: 5px;
+}
+
+.voffset2 {
+    margin-top: 10px;
+}
+
+.voffset3 {
+    margin-top: 15px;
+}
+
+.voffset4 {
+    margin-top: 30px;
+}
+
+.voffset5 {
+    margin-top: 40px;
+}
+
+.voffset6 {
+    margin-top: 60px;
+}
+
+.voffset7 {
+    margin-top: 80px;
+}
+
+.voffset8 {
+    margin-top: 100px;
+}
+
+.voffset9 {
+    margin-top: 150px;
+}
+
 
 /* start Password strength bar style */
+
 ul#strength {
-    display:inline;
-    list-style:none;
-    margin:0;
-    margin-left:15px;
-    padding:0;
-    vertical-align:2px;
+    display: inline;
+    list-style: none;
+    margin: 0;
+    margin-left: 15px;
+    padding: 0;
+    vertical-align: 2px;
 }
 
 .point:last {
-    margin:0 !important;
+    margin: 0 !important;
 }
+
 .point {
-    background:#DDD;
-    border-radius:2px;
-    display:inline-block;
-    height:5px;
-    margin-right:1px;
-    width:20px;
+    background: #DDD;
+    border-radius: 2px;
+    display: inline-block;
+    height: 5px;
+    margin-right: 1px;
+    width: 20px;
 }
+
+
 /* end Password strength bar style */
 
 .table-responsive .table .longtext {
@@ -181,23 +235,28 @@ ul#strength {
 .article-preview .details .summary {
     display: block;
 }
-.article-preview .details .pubInfo  p {
+
+.article-preview .details .pubInfo p {
     margin: 0;
 }
+
 .article-preview .details .label {
     color: #808080;
 }
+
 .article-preview {
     border: 1px solid grey;
     padding: 10px;
     border-radius: 4px;
 }
+
 .article-preview legend {
     width: auto;
     margin: 0 20px;
     color: #666;
     font-size: 16px;
 }
+
 
 /*.btn-group {
     padding-top: 20px;
@@ -207,6 +266,7 @@ ul#strength {
     position: relative;
     overflow: hidden;
 }
+
 .btn-file input[type=file] {
     position: absolute;
     top: 0;
@@ -226,17 +286,20 @@ ul#strength {
 .cropArea {
     background: #E4E4E4;
     overflow: hidden;
-    width:100%;
-    height:350px;
+    width: 100%;
+    height: 350px;
 }
+
 form .progress {
     line-height: 15px;
 }
+
 .progress {
     display: inline-block;
     width: 100px;
     border: 3px groove #CCC;
 }
+
 .progress div {
     font-size: smaller;
     background: orange;
@@ -244,7 +307,7 @@ form .progress {
 }
 
 .evaluator {
-    list-style:none;
+    list-style: none;
 }
 
 .disabled {
@@ -255,47 +318,89 @@ form .progress {
 .list-comma::before {
     content: ', ';
 }
+
 .list-comma:first-child::before {
     content: '';
 }
 
+
 /* ====================================
     publish-form-container
 ======================================*/
+
+
 /* form styling */
-#publish-form-container { border-radius:5px;}
-#publish-form-container .page-header   { margin:0; border-top-left-radius:5px; border-top-right-radius:5px; }
+
+#publish-form-container {
+    border-radius: 5px;
+}
+
+#publish-form-container .page-header {
+    margin: 0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
 
 /* numbered buttons */
-#publish-form-container #status-buttons                 {  }
-#publish-form-container #status-buttons a               {
-    color:#003147;
-    display:inline-block;
-    font-size:12px;
-    margin-right:10px;
-    text-align:center;
-    text-transform:uppercase;
+
+#publish-form-container #status-buttons {}
+
+#publish-form-container #status-buttons a {
+    color: #003147;
+    display: inline-block;
+    font-size: 12px;
+    margin-right: 10px;
+    text-align: center;
+    text-transform: uppercase;
     text-decoration: none;
 }
-#publish-form-container #status-buttons a:hover         { text-decoration:none; }
-#publish-form-container #status-buttons span            { background:#808080; display:block; height:30px; margin:0 auto 10px; padding-top:5px; width:30px; border-radius:50%; color: #ffffff}
+
+#publish-form-container #status-buttons a:hover {
+    text-decoration: none;
+}
+
+#publish-form-container #status-buttons span {
+    background: #808080;
+    display: block;
+    height: 30px;
+    margin: 0 auto 10px;
+    padding-top: 5px;
+    width: 30px;
+    border-radius: 50%;
+    color: #ffffff
+}
+
 
 /* active buttons */
-#publish-form-container #status-buttons a.active span   { background:#00BC8C; }
+
+#publish-form-container #status-buttons a.active span {
+    background: #00BC8C;
+}
+
 
 /* ANIMATION STYLINGS */
-#publish-form-container form            { position:relative;  overflow:visible; padding:20px; }
+
+#publish-form-container form {
+    position: relative;
+    overflow: visible;
+    padding: 20px;
+}
+
 
 /* basic styling for entering and leaving */
+
+
 /* left and right added to ensure full width */
+
 #publish-form-container #publish-form-views.ng-enter,
-#publish-form-container #publish-form-views.ng-leave      {
-    position:absolute;
-    left:30px;
-    right:30px;
-    transition:0.5s all ease;
-    -moz-transition:0.5s all ease;
-    -webkit-transition:0.5s all ease;
+#publish-form-container #publish-form-views.ng-leave {
+    position: absolute;
+    left: 30px;
+    right: 30px;
+    transition: 0.5s all ease;
+    -moz-transition: 0.5s all ease;
+    -webkit-transition: 0.5s all ease;
 }
 
 #publish-form-container .btn-toolbar {
@@ -303,28 +408,34 @@ form .progress {
     margin: 0 auto;
 }
 
+
 /* enter animation */
-#publish-form-container #publish-form-views.ng-enter            {
-    -webkit-animation:slideInRight 0.5s both ease;
-    -moz-animation:slideInRight 0.5s both ease;
-    animation:slideInRight 0.5s both ease;
+
+#publish-form-container #publish-form-views.ng-enter {
+    -webkit-animation: slideInRight 0.5s both ease;
+    -moz-animation: slideInRight 0.5s both ease;
+    animation: slideInRight 0.5s both ease;
 }
 
+
 /* leave animation */
-#publish-form-container #publish-form-views.ng-leave            {
-    -webkit-animation:slideOutLeft 0.5s both ease;
-    -moz-animation:slideOutLeft 0.5s both ease;
-    animation:slideOutLeft 0.5s both ease;
+
+#publish-form-container #publish-form-views.ng-leave {
+    -webkit-animation: slideOutLeft 0.5s both ease;
+    -moz-animation: slideOutLeft 0.5s both ease;
+    animation: slideOutLeft 0.5s both ease;
 }
 
 #publish-form-container .publish-classification input[type=checkbox].iconurl {
     display: none;
 }
 
+
 /*
 - Style each label that is directly after the input
 - position: relative; will ensure that any position: absolute children will position themselves in relation to it
 */
+
 #publish-form-container .publish-classification input[type=checkbox].iconurl + label {
     height: 8em;
     width: 8em;
@@ -337,23 +448,30 @@ form .progress {
     position: relative;
     transition: all 0.4s;
     border: solid 5px #FFF;
-    box-shadow: 0 0 1px #FFF; /* Soften the jagged edge */
+    box-shadow: 0 0 1px #FFF;
+    /* Soften the jagged edge */
     text-align: center;
 }
 
+
 /* Provide a border when hovered and when the checkbox before it is checked */
+
 #publish-form-container .publish-classification input[type=checkbox].iconurl + label:hover,
 #publish-form-container .publish-classification input[type=checkbox].iconurl:checked + label {
     border: solid 5px #F00;
-    box-shadow: 0 0 1px #F00; /* Soften the jagged edge */
+    box-shadow: 0 0 1px #F00;
+    /* Soften the jagged edge */
 }
+
 
 /*
 - Create a pseudo element :after when checked and provide a tick
 - Center the content
 */
+
 #publish-form-container .publish-classification input[type=checkbox].iconurl:checked + label:after {
-    content: '\2714'; /*content is required, though it can be empty - content: '';*/
+    content: '\2714';
+    /*content is required, though it can be empty - content: '';*/
     display: block;
     height: 1em;
     width: 1em;
@@ -366,13 +484,16 @@ form .progress {
     color: #FF0000;
 }
 
+
 /* ==========================================
     Treeview
 ============================================*/
 
 .treeview .tree-browser {
     padding-bottom: 1em;
- }
+}
+
+
 /*#treeview .context-viewer {
     padding-left: 50px;
     overflow: auto;
@@ -382,8 +503,10 @@ form .progress {
 /* ========================================
     Overlay, for spinner, etc...
 ===========================================*/
+
 .overlay {
-    background-color: #333; /*or semitransparent image*/
+    background-color: #333;
+    /*or semitransparent image*/
     height: 100%;
     width: 100%;
     position: absolute;
@@ -393,9 +516,11 @@ form .progress {
     opacity: 0.5;
 }
 
+
 /* ========================================
     Modal fullscreen
     =======================================*/
+
 .modal-full-screen .modal-dialog {
     width: 100%;
     height: 100%;
@@ -413,18 +538,25 @@ form .progress {
 /* ========================================
     For directives
 ===========================================*/
+
 .subject-infos {
     display: inline;
 }
+
 .subject-search {
     display: inline;
 }
+
 .fa-users .tooltip-inner {
     word-break: break-all;
 }
+
+
 /* ========================================
     For ng-animates with ui-router, some transition give problems
 ===========================================*/
+
+
 /*.content.ng-enter {
     transition: 0.25s;
     opacity: 0; }
@@ -435,3 +567,568 @@ form .progress {
     opacity: 1; }
 .content.ng-leave-active {
     opacity: 0; }*/
+
+
+/* SURCHARGE THEME */
+
+body > .container-fluid {
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+
+/* OMBRE NAV*/
+
+body > div.ng-scope > nav {
+    -moz-box-shadow: 4px 0px 5px -5px #888888;
+    -webkit-box-shadow: 4px 0px 5px -5px #888888;
+    -o-box-shadow: 4px 0px 5px -5px #888888;
+    box-shadow: 4px 0px 5px -5px #888888;
+    filter: progid: DXImageTransform.Microsoft.Shadow(color=#888888, Direction=134, Strength=5);
+}
+
+body > div.container-fluid > div.well.ng-scope > div > div > div {
+    padding-left: 15px;
+}
+
+
+/* SUPPRESSION BRAND SOUS MENU */
+
+body > div.ng-scope > nav > div > div.navbar-header > a {
+    display: none;
+}
+
+.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #25B2F3;
+}
+
+
+/* SUPPRESSION ICONE SOUS MENU ET CENTRAGE */
+
+#navbar-collapse > ul > li:nth-child(1) > a > span.glyphicon.glyphicon-home,
+#navbar-collapse > ul > li.dropdown.pointer > a > span > span.glyphicon.glyphicon-th-list,
+#navbar-collapse > ul > li.ng-isolate-scope > a > span.glyphicon.glyphicon-th-list,
+#navbar-collapse > ul > li:nth-child(3) > a > span > span.glyphicon.glyphicon-tower,
+#navbar-collapse > ul > li.dropdown.pointer.ng-scope > a > span > span.glyphicon.glyphicon-flag {
+    display: none;
+}
+
+
+/* MISE EN FORME MENU ETAPE */
+
+#publish-form-container #status-buttons a.active span {
+    background: #25B2F3;
+}
+
+#publish-form-container > div.panel-heading.page-header.text-center {
+    height: 80px;
+}
+
+#publish-form-container > div.panel-heading.page-header.text-center > h2 {
+    width: 40%;
+    float: left;
+    margin-top: 10px;
+}
+
+#status-buttons > div {
+    width: 60%;
+    float: left;
+}
+
+
+/* SIZE ET CENTRAGE SOUS MENU */
+
+#navbar-collapse > ul,
+#navbar-collapse {
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+body > div.ng-scope {
+    padding-left: 15%;
+    padding-right: 15%;
+    margin-top: 10px;
+}
+
+#navbar-collapse > ul > li:focus,
+#navbar-collapse > ul > li:hover {
+    width: 30%;
+    border-bottom: solid 3px #25B2F3;
+    margin-left: 10px;
+}
+
+#navbar-collapse > ul > li {
+    width: 30%;
+    border-bottom: solid 3px #D0D0D0;
+    margin-left: 10px;
+}
+
+body > div.ng-scope > nav {
+    background-color: #ffffff;
+}
+
+#navbar-collapse > ul > li > a {
+    text-align: center;
+}
+
+body > div.ng-scope > nav {
+    border-bottom: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    margin-bottom: 0px;
+}
+
+body > div.ng-scope > nav > div {
+    width: 100%;
+    padding: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+
+/* MISE EN FORME PANEL */
+
+body > div.container-fluid > div.well.ng-scope {
+    border-top: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    background-color: #ffffff;
+    -moz-box-shadow: 4px 5px 5px -5px #888888;
+    -webkit-box-shadow: 4px 5px 5px -5px #888888;
+    -o-box-shadow: 4px 5px 5px -5px #888888;
+    box-shadow: 4px 5px 5px -5px #888888;
+    filter: progid: DXImageTransform.Microsoft.Shadow(color=#888888, Direction=134, Strength=5);
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+}
+
+#publish-form-container > div.panel-heading.page-header {
+    width: 100%;
+    background-color: #F3F3F3;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-top: 1px solid #D0D0D0;
+}
+
+body > div.container-fluid > div.well.ng-scope > div > div > div {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+#publish-form-container {
+    border: 0px;
+}
+
+/html/body/div[3]/div[2]/div body > div.container-fluid > div.well.ng-scope {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+
+/* CHAGEMENT COLOR SIZE ICONE ACCUEIL */
+
+body > div.container-fluid > div.well.ng-scope > div > div > div > a:nth-child(1) > div > div.col-xs-6.text-right,
+body > div.container-fluid > div.well.ng-scope > div > div > div > a:nth-child(2) > div > div.col-xs-6.text-right,
+body > div.container-fluid > div.well.ng-scope > div > div > div > a:nth-child(3) > div > div.col-xs-6.text-right,
+body > div.container-fluid > div.well.ng-scope > div > div > div > a:nth-child(4) > div > div.col-xs-6.text-right {
+    text-align: center;
+    color: #25B2F3;
+}
+
+body > div.container-fluid > div.well.ng-scope > div > div > div > a:nth-child(1),
+body > div.container-fluid > div.well.ng-scope > div > div > div > a:nth-child(2),
+body > div.container-fluid > div.well.ng-scope > div > div > div > a:nth-child(3),
+body > div.container-fluid > div.well.ng-scope > div > div > div > a:nth-child(4) {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+body > div.container-fluid > div.well.ng-scope > div > div > div > a:nth-child(1) > div > div.col-xs-6.text-right > i,
+body > div.container-fluid > div.well.ng-scope > div > div > div > a:nth-child(2) > div > div.col-xs-6.text-right > i,
+body > div.container-fluid > div.well.ng-scope > div > div > div > a:nth-child(3) > div > div.col-xs-6.text-right > i,
+body > div.container-fluid > div.well.ng-scope > div > div > div > a:nth-child(4) > div > div.col-xs-6.text-right > i {
+    font-size: 48px;
+}
+
+
+/* MODIF ICONE CONTEXTES */
+
+.fa-home {
+    color: #25B2F3;
+}
+
+.fa-briefcase {
+    color: #545454;
+}
+
+.fa-folder {
+    color: #A5A5A5;
+}
+
+
+/* GLOBAL */
+
+.table > thead > tr > th,
+.table > tbody > tr > th,
+.table > tfoot > tr > th,
+.table > thead > tr > td,
+.table > tbody > tr > td,
+.table > tfoot > tr > td {
+    width: 100% !important;
+    padding-left: 2px !important;
+    padding-right: 2px !important;
+}
+
+table,
+tr,
+td {
+    min-width: 0px !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+table {
+    width: 96% !important;
+    margin-left: 12px !important;
+    margin-right: 12px !important;
+}
+
+
+/* GLOBAL BT */
+
+.btn-default {
+    width: 100%;
+}
+
+#tabs > div > table > tbody > tr > td > button.btn.btn-info,
+#tabs > div > table > tbody > tr > td > button.btn.btn-warning,
+#tabs > div > table > tbody > tr > td > button.btn.btn-primary,
+#tabs > div > table > tbody > tr > td > button.btn.btn-danger {
+    width: 100%;
+}
+
+body > div.container-fluid > div.well.ng-scope > div > div > div > div.table-responsive > table > tbody > tr > td > button.btn.btn-info,
+body > div.container-fluid > div.well.ng-scope > div > div > div > div.table-responsive > table > tbody > tr > td > button.btn.btn-primary,
+body > div.container-fluid > div.well.ng-scope > div > div > div > div.table-responsive > table > tbody > tr > td > button.btn.btn-danger,
+#permissions > div > div > div > div > table > tbody > tr > td > button.btn.btn-primary.ng-isolate-scope{
+    width: 100%;
+}
+
+#reader {
+    width: 100%;
+}
+
+#publish-form-views > div > div.panel > div > div.form-group > div > div:nth-child(1) > label,
+#publish-form-views > div > div.panel > div > div.form-group > div > div:nth-child(2) > label,
+#publish-form-views > div > div.panel > div > div.form-group > div > div:nth-child(3) > label,
+#publish-form-views > div > div.panel > div > div.form-group > div > div:nth-child(4) > label {
+    border-radius: 5px;
+    padding: 5px;
+    height: 30px
+}
+
+body > div.container-fluid > div.well.ng-scope > div > div > div > h2 {
+    margin-top: 0px;
+}
+
+#publish-form-views > div > div.panel > div > div.form-group > div > div:nth-child(1) > label > span,
+#publish-form-views > div > div.panel > div > div.form-group > div > div:nth-child(2) > label > span,
+#publish-form-views > div > div.panel > div > div.form-group > div > div:nth-child(3) > label > span,
+#publish-form-views > div > div.panel > div > div.form-group > div > div:nth-child(4) > label > span {
+    color: #ffffff;
+}
+
+#summary,
+#title {
+    width: 100%;
+}
+
+body > div.container-fluid > div.well.ng-scope > div > div > div > div > table > tbody > tr > td > input {
+    width: auto;
+}
+
+.form-control {
+    width: auto;
+}
+
+
+/* GLOBAL FONT */
+
+small,
+.small {
+    font-size: 78%;
+}
+
+* {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 12px;
+}
+
+#navbar-collapse > ul > li:nth-child(1) > a > span.ng-scope,
+#navbar-collapse > ul > li:nth-child(2) > a > span > span.ng-scope,
+#navbar-collapse > ul > li:nth-child(3) > a > span > span.hidden-tablet.ng-scope,
+#navbar-collapse > ul > li.dropdown.pointer.ng-scope > a > span > span.hidden-tablet.ng-scope,
+#navbar-collapse > ul > li.ng-isolate-scope > a > span.ng-scope {
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 14px;
+}
+
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 14px;
+}
+
+a:hover,
+a:focus {
+    color: #25B2F3;
+}
+
+a {
+    color: #25B2F3;
+    text-decoration: none;
+}
+
+.well {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.btn-info {
+    color: #fff;
+    background-color: #25B2F3;
+    border-color: #a5a5a5;
+}
+
+.btn-info:hover {
+    opacity: 0.5;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #25B2F3;
+    border-color: #a5a5a5;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #25B2F3;
+    border-color: #a5a5a5;
+    opacity: 0.5;
+}
+
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:visited {}
+
+#saveCategoryModal > div > div > form > div.modal-footer > button.btn.btn-primary,
+#savePublisherModal > div > div > form > div.modal-footer > button.btn.btn-primary,
+#inValidateItemConfirmation > div > div > form > div.modal-footer > button.btn.btn-danger,
+#targets > div > div > div:nth-child(2) > form > div.footer > button.btn.btn-primary,
+#deleteItemConfirmation > div > div > form > div.modal-footer > button.btn.btn-danger,
+#saveOrganizationModal > div > div > form > div.modal-footer > button.btn.btn-primary,
+#groupListModaltargetSubject > div > div > div.modal-footer > button.btn.btn-primary,
+#permissions > div > div > div:nth-child(2) > form > div.footer > button.btn.btn-primary,
+#saveOrganizationModal > div > div > form > div.modal-footer > button.btn.btn-default,
+#groupListModaltargetSubject > div > div > div.modal-footer > button.btn.btn-default,
+#groupListModaltargetSubject > .btn,
+#saveOrganizationModal > .btn,
+#permissions > .btn,
+#deleteItemConfirmation > .btn,
+#deleteContextConfirmation > .btn,
+#permissions > div > div > div:nth-child(2) > form > div.footer > button.btn.btn-default,
+#deleteContextConfirmation > div > div > form > div.modal-footer > button.btn.btn-default,
+#deleteContextConfirmation > div > div > form > div.modal-footer > button.btn.btn-danger,
+#saveCategoryModal > div > div > form > div.modal-footer > button.btn.btn-default,
+#inValidateItemConfirmation > div > div > form > div.modal-footer > button.btn.btn-default,
+#groupListModalpermCtxSubject > div > div > div.modal-footer > button.btn.btn-default,
+#groupListModalpermCtxSubject > div > div > div.modal-footer > button.btn.btn-primary,
+#deleteItemConfirmation > div > div > form > div.modal-footer > button.btn.btn-default,
+#targets > div > div > div:nth-child(2) > form > div.footer > button.btn.btn-default,
+#userFromGroupListModalpermCtxSubject > div > div > div.modal-footer > button.btn.btn-default,
+#userListModalpermCtxSubject > div > div > div.modal-footer > button.btn.btn-default,
+#userListModalpermCtxSubject > div > div > div.modal-footer > button.btn.btn-primary,
+#userFromGroupListModalpermCtxSubject > div > div > div.modal-footer > button.btn.btn-primary,
+#userListModaltargetSubject > div > div > div.modal-footer > button.btn.btn-default,
+#userFromGroupListModaltargetSubject > div > div > div.modal-footer > button.btn.btn-default,
+#userFromGroupListModaltargetSubject > div > div > div.modal-footer > button.btn.btn-primary,
+#userListModaltargetSubject > div > div > div.modal-footer > button.btn.btn-primary,
+#deleteTargetConfirmation > div > div > form > div.modal-footer > button.btn.btn-default,
+#deleteTargetConfirmation > div > div > form > div.modal-footer > button.btn.btn-danger,
+#savePublisherModal > div > div > form > div.modal-footer > button.btn.btn-default,
+#deletePublisherConfirmation > div > div > form > div.modal-footer > button.btn.btn-default,
+#deletePublisherConfirmation > div > div > form > div.modal-footer > button.btn.btn-danger
+{
+    width: 200px;
+    margin-bottom: 0;
+    margin-left: 5px;
+}
+
+body > div.container-fluid > div.well.ng-scope > div > div > div > ul > li:nth-child(2) > a,
+body > div.container-fluid > div.well.ng-scope > div > div > div > ul > li.ng-scope > a,
+body > div.container-fluid > div.well.ng-scope > div > div > div > ul > li:nth-child(1) > a {
+    border: solid 1px #25B2F3;
+}
+
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:hover,
+.nav-pills > li.active > a:focus {
+    border: solid 1px #a5a5a5;
+    background-color: #25B2F3;
+    color: #ffffff;
+}
+
+#navbar-collapse > ul > li.ng-isolate-scope.active > a {
+    border: 0px;
+    background-color: #ffffff;
+}
+
+#cropImageModale > div > div > div.modal-footer > button.btn.btn-primary {
+    width: 100%;
+    margin-bottom: 0;
+    margin-left: 5px;
+}
+
+
+/* MISE EN PAGE PAGE PUBLICATION EDITION */
+
+#enclosure {
+    width: 100%;
+}
+
+
+/* PAGINATION */
+
+.pagination > .active > a,
+.pagination > .active > span,
+.pagination > .active > a:hover,
+.pagination > .active > span:hover,
+.pagination > .active > a:focus,
+.pagination > .active > span:focus {
+    background-color: #25B2F3;
+    border-color: #ffffff;
+}
+
+
+/* PADDING CONTEXT */
+
+body > div.container-fluid > div.well.ng-scope > div > div > div {
+    margin: 0px;
+    ;
+}
+
+
+/* MISE EN FORME CENTRE PANEL */
+
+#tabs {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+/* MISE EN FORME EDITOR */
+
+#body > div.ng-scope.ng-isolate-scope.ta-toolbar.btn-toolbar > div > button {
+    background-color: #25B2F3;
+    border-color: #ffffff;
+}
+
+
+/* MEDIA QUERY */
+
+@media screen and (max-width: 767px) {
+    /* CHAGEMENT COLOR ICONE ACCUEIL */
+    a.list-group-item,
+    button.list-group-item {
+        color: #25B2F3;
+    }
+    /* CACHE TEXTE TROP GRAND */
+    body > div.container-fluid > div.well.ng-scope > div > div > div > a {
+        overflow: hidden;
+    }
+    body > div.container-fluid > div.well.ng-scope > div > div > div > a > div {
+        width: auto;
+    }
+    /* SIZE ICONE ACCUEIL */
+    body > div.container-fluid > div.well.ng-scope > div > div > div > a:nth-child(1) > div > div.col-xs-6.text-right,
+    body > div.container-fluid > div.well.ng-scope > div > div > div > a:nth-child(2) > div > div.col-xs-6.text-right,
+    body > div.container-fluid > div.well.ng-scope > div > div > div > a:nth-child(3) > div > div.col-xs-6.text-right,
+    body > div.container-fluid > div.well.ng-scope > div > div > div > a:nth-child(4) > div > div.col-xs-6.text-right {
+        width: 30%;
+    }
+    body > div.container-fluid > div.well.ng-scope > div > div > div > a:nth-child(1) > div > div.col-xs-6.text-right > i,
+    body > div.container-fluid > div.well.ng-scope > div > div > div > a:nth-child(2) > div > div.col-xs-6.text-right > i,
+    body > div.container-fluid > div.well.ng-scope > div > div > div > a:nth-child(3) > div > div.col-xs-6.text-right > i,
+    body > div.container-fluid > div.well.ng-scope > div > div > div > a:nth-child(4) > div > div.col-xs-6.text-right > i {
+        font-size: 24px;
+    }
+    /* MISE EN FORME SOUS MENU */
+    #navbar-collapse,
+    #navbar-collapse > ul {
+        padding: 0px;
+        margin: 0px;
+    }
+    #navbar-collapse > ul > li:nth-child(1),
+    #navbar-collapse > ul > li:nth-child(2),
+    #navbar-collapse > ul > li:nth-child(3) {
+        float: none;
+        width: 100%;
+        margin-left: 0px;
+    }
+    body > div.container-fluid > div.well.ng-scope {
+        padding-top: 0px;
+    }
+    body > div.ng-scope {
+        padding-left: 5%;
+        padding-right: 5%;
+        margin-top: 10px;
+    }
+    body > .container-fluid {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    body > div.ng-scope > nav > div > div.navbar-header > button {
+        margin-right: 15%;
+        margin-left: 75%;
+        background: #25B2F3;
+    }
+    .navbar-default .navbar-toggle .icon-bar {
+        background-color: #ffffff;
+    }
+    .navbar-default .navbar-toggle:hover,
+    .navbar-default .navbar-toggle:focus {
+        background: #25B2F3;
+    }
+    /* MISE EN FORME MENU ETAPE */
+    #publish-form-container > div.panel-heading.page-header.text-center > h2 {
+        font-size: 20px;
+        width: 100%;
+    }
+    #status-buttons > div {
+        width: 100%;
+        float: left;
+    }
+    #publish-form-container #status-buttons span {
+        font-size: 12px;
+        font-weight: bold;
+        width: 20px;
+        height: 20px;
+        line-height: 12px;
+    }
+    #publish-form-container #status-buttons a {
+        font-size: 9px;
+    }
+    #publish-form-container > div.panel-heading.page-header.text-center {
+        height: 110px;
+    }
+    /* FOOTER */
+    body > div.container-fluid > div.footer > p > a > span.ng-scope,
+    body > div.container-fluid > div.footer > p > a > span.ng-binding {
+        font-size: 10px;
+    }
+}
